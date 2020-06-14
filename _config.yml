@@ -12,19 +12,21 @@ author:
   site             : &author_site "http://pirpedro.com.br"
   signature        : >-
               See you next time :sunglasses:
+  twitter: &twitter "pir_pedro"
+  github: &github "pirpedro"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: *author_site
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: !Join [&twitter_url "https://twitter.com/", &twitter "pir_pedro"]
+      url: !Join [&twitter_url "https://twitter.com/", *twitter]
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: !Join [&facebook_url "https://facebook.com/", &facebook "pirpedro"]
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: !Join [&github_url "https://github.com/", &github "pirpedro"]
+      url: !Join [&github_url "https://github.com/", *github]
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: !Join [&instagram_url "https://instagram.com/", &instagram "pirpedro"]
@@ -115,8 +117,8 @@ social:
 # Analytics
 analytics:
   provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-59388463-2"
+  google: 
+    tracking_id          : "UA-169340692-1"
     anonymize_ip         : false
 
     # Site Footer
@@ -195,13 +197,7 @@ sass:
 
 # collections
 collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
   recipes:
-    output: true
-    permalink: /:collection/:path/
-  pets:
     output: true
     permalink: /:collection/:path/
   projects:

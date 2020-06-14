@@ -294,6 +294,45 @@ gulp.task('build:img:posts', gulp.parallel('build:img:header',function() {
 
 gulp.task('build:img', gulp.series('build:img:private',gulp.parallel('build:img:avatar', 'build:img:logo', 'build:img:site', 'build:img:posts')));
 
+gulp.task('build:humans.txt', function(){
+  return $.file('humans.txt','',{src:true}) 
+  .pipe($.humans({
+    header: _config.title,
+    team: [{
+      'Creator':_config.author.name,
+      'Twitter': '@'+ _config.author.twitter,
+      'Github': _config.author.github,
+      'Location': _config.author.location
+
+    }],
+    thanks: [
+      'Jekyll',
+      'Node',
+      'Gulp',
+      'Github Pages'
+    ],
+    site: [{
+      'Language': 'English, Portuguese',
+      'Standards': 'HTML5, CSS3',
+      'Components': 'jQuery, Normalize.css',
+      'Software': 'vscode, gimp'
+    }],
+    note: "Thanks everybody"
+
+  }))
+  .pipe(gulp.dest('./'))
+});
+
+gulp.task('build:robots.txt', function(){
+  return $.file('robots.txt','',{src:true}) 
+  .pipe($.robots({
+    useragent: '*',
+    Disallow: '',
+    Sitemap: _config.url + '/sitemap.xml'
+    }))
+  .pipe(gulp.dest('./'))
+});
+
 gulp.task('build:js', function(){
   return gulp.src([assets_prefix+'js/vendor/**/*.js',
                     assets_prefix+'js/plugins/*.js',

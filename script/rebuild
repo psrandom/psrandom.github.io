@@ -7,13 +7,14 @@ set -e
 cd "$(dirname "$0")/.."
 
 case $1 in
-  js) script/run npm install
-      script/run npm run build:js
-      [ -d node_modules ] && rm -rf node_modules
+  js) script/run npm run build:js
+  ;;
+  img) script/run npm run build:img
   ;;
   *)
     script/teardown > /dev/null 2>&1 || true
     script/compose build
     script/run npm install
+    script/run npm build:img
   ;;
 esac
