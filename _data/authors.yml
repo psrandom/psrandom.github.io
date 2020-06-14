@@ -1,0 +1,53 @@
+# Authors
+
+Andressa Contarato:
+  name      : "Andressa Contarato"
+  avatar    : "https://s3.wasabisys.com/psrandom/img/a/andressa-contarato-gray-bio.jpg"
+  bio       : >-   
+              Mozi mozão.
+  location  : "Rio de Janeiro, RJ"
+  email     : &email "pir.pedro@gmail.com"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url:  "http://pirpedro.com.br"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:  "https://facebook.com/andressa.contarato"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url:  "https://github.com/contaratoandressa"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/andressacontarato"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/andressacontarato"
+Chef Pedro: 
+  name             : &name "Chef Pedro"
+  avatar           : "https://s3.wasabisys.com/psrandom/img/a/chef-pedro-bio.jpg"
+  bio              : &description >-   
+    Cozinheiro de final de semana, masterchef do povo a busca de sua estrela michelin.
+  location         : "Rio de Janeiro, RJ"
+  email            : &email "pir.pedro@gmail.com"
+  signature        : >-
+              Bom apetite 😋
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: &site "http://pirpedro.com.br"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: !Join [&twitter_url "https://twitter.com/", &twitter "pir_pedro"]
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: !Join [&facebook_url "https://facebook.com/", &facebook "pirpedro"]
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: !Join [&github_url "https://github.com/", &github "pirpedro"]
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: !Join [&instagram_url "https://instagram.com/", &instagram "pirpedro"]
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: !Join [&linkedin_url "https://www.linkedin.com/in/", &linkedin "pirpedro"]

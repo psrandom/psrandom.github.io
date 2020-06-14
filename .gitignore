@@ -1,0 +1,11 @@
+_site
+.sass-cache
+.jekyll-metadata
+/vendor
+.env
+node_modules
+private
+public
+_plugins
+gulpfile_example.js
+assets/img

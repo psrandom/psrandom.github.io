@@ -1,0 +1,18 @@
+youtube.com:
+  - provider: &youtube youtube
+    url: &youtube_url https://www.youtube-nocookie.com/embed/
+vimeo.com:
+  - provider: &vimeo vimeo
+    url: &vimeo_url https://player.vimeo.com/video/
+dailymotion.com:
+  - provider: &dailymotion dailymotion
+    url: &dailymotion_url https://www.dailymotion.com/embed/video/  
+drive.google.com:
+  - provider: &drive drive
+    url: &drive_url https://drive.google.com/file/d/{src}
+infogram.com:
+  - provider: &infogram infogram
+    url: &infogram_url https://infogram.com/{src}/preview
+bilibili.com: 
+  - provider: &bilibili bilibili
+  - url: &bilibili_url https://player.bilibili.com/player.html?bvid=
