@@ -51,8 +51,8 @@
     box-decoration-break: clone;
     background-color: #111;
     background-color: var(--text-color);
-    -webkit-mask-image: url(/public/img/page/dust.png);
-    mask-image: url(/public/img/page/dust.png);
+    -webkit-mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+    mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
   }
 
   a {
@@ -125,7 +125,7 @@
     box-decoration-break: clone;
     background-color: #111;
     background-color: var(--text-color);
-    -webkit-mask-image: url(/public/img/page/dust.png);
-    mask-image: url(/public/img/page/dust.png);
+    -webkit-mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+    mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
   }
 }
