@@ -1,0 +1,35 @@
+---
+layout:	post
+title:	"Infogram"
+date:	2020-03-13
+---
+
+  ### Hoje vou falar um pouco sobre o INFOGRAM.
+
+Umas das ferramentas de visualizações de dados que, na minha opinião, está ganhando cada vez mais o mercado e fornecendo ao cliente grandes possibilidades de uso.
+
+A página inicial é dada abaixo:
+
+![](https://s3.wasabisys.com/psrandom/img/p/medium/1*r16lEQnBnblWzS8FdEq2gw.jpg)A criação da conta é gratuita. E na versão gratuita TODOS os trabalhos elaborados na plataforma serão abertos para o público. Diferentemente quando se compra um plano.
+
+Para melhores informações sobre preços, consulte o seguinte link:
+
+[**Pricing - Infogram**  
+*You've got options with Infogram. From personal use to large organizations and everything in between, we have you…*infogram.com](https://infogram.com/pricing?rc=paid0sem0branded0search&utm_campaign=GS_BR_SUL_LATAM_BR%26PT_E_PT_Infogram&utm_medium=ppc&utm_term=infogram&utm_source=adwords&hsa_tgt=kwd-320396129236&hsa_ad=297459548108&hsa_kw=infogram&hsa_grp=58672493206&hsa_src=g&hsa_mt=e&hsa_acc=8106939973&hsa_net=adwords&hsa_cam=1584612935&hsa_ver=3&gclid=EAIaIQobChMI3_au6KiW6AIVwYORCh1ihgXEEAAYASACEgLNB_D_BwE "https://infogram.com/pricing?rc=paid0sem0branded0search&utm_campaign=GS_BR_SUL_LATAM_BR%26PT_E_PT_Infogram&utm_medium=ppc&utm_term=infogram&utm_source=adwords&hsa_tgt=kwd-320396129236&hsa_ad=297459548108&hsa_kw=infogram&hsa_grp=58672493206&hsa_src=g&hsa_mt=e&hsa_acc=8106939973&hsa_net=adwords&hsa_cam=1584612935&hsa_ver=3&gclid=EAIaIQobChMI3_au6KiW6AIVwYORCh1ihgXEEAAYASACEgLNB_D_BwE")[](https://infogram.com/pricing?rc=paid0sem0branded0search&utm_campaign=GS_BR_SUL_LATAM_BR%26PT_E_PT_Infogram&utm_medium=ppc&utm_term=infogram&utm_source=adwords&hsa_tgt=kwd-320396129236&hsa_ad=297459548108&hsa_kw=infogram&hsa_grp=58672493206&hsa_src=g&hsa_mt=e&hsa_acc=8106939973&hsa_net=adwords&hsa_cam=1584612935&hsa_ver=3&gclid=EAIaIQobChMI3_au6KiW6AIVwYORCh1ihgXEEAAYASACEgLNB_D_BwE)![](https://s3.wasabisys.com/psrandom/img/p/medium/1*Q0fho40kQPunBDNhwc0BHQ.jpg)Ao criar a conta, são apresentados os seguintes formatos:
+
+* Infographics: elaboração de infogram;
+* Reports: criação de um relatório;
+* Slides: confecção de visualizações parecidas com power point;
+* Dashboards: painel visual dinâmico semelhante ao power BI;
+* Facebook post: visualização no formato de posts para serem incorporados nas redes sociais, específico do facebook;
+* Posters: visualização características de redes sociais com tela vertical, tipo instagram.
+![](https://s3.wasabisys.com/psrandom/img/p/medium/1*3m-pFph396hm3SGsmRJwEQ.jpg)Os principais pontos positivos para a construção dessas visualizações é que:
+
+* Você consegue compatilhar a sua apresentação com outras pessoas somente para visualização, por e-mail ou app de conversa.
+![](https://s3.wasabisys.com/psrandom/img/p/medium/1*On9QImmM5i1X070ZFaro5Q.jpg)* O infogram permite você integrar com banco de dados SQL, como: My SQL, PostGre SQL, Oracle, Amazon Redshit e Microsoft MySQL Server.
+* Integração com: Dropbox, Google Drive e Google Analytics.
+* Você pode fazer a inserção (e upload) de vídeos direto do youtube, stickers, giphy, slide share, url, flickr e vimeo.
+![](https://s3.wasabisys.com/psrandom/img/p/medium/1*xjF4DE-8TXHkZW8KMBgM0A.jpg)* Visualizações gráficas e mapas.
+![](https://s3.wasabisys.com/psrandom/img/p/medium/1*zW4009hLKhzk6luSSeTttQ.jpg)![](https://s3.wasabisys.com/psrandom/img/p/medium/1*kom9mUddQrOgwtB1y8B7pA.jpg)No próximo post, vou ensinar o passo a passo do uso de um infográfico.
+
+  

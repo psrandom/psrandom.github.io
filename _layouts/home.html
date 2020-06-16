@@ -1,10 +1,12 @@
 ---
-layout: archive
+layout: page
 ---
 
 {{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<div class="content">
+<h2 class="home__subtitle">
+  <span>{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</span>
+</h2>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
@@ -17,3 +19,5 @@ layout: archive
 {% endfor %}
 
 {% include paginator.html %}
+
+</div>

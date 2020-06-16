@@ -52,6 +52,17 @@
   max-height: 2rem;
 }
 
+.site-logo path{
+  fill: $text-color;
+  fill: var(--text-color);
+
+}
+
+svg.site-logo {
+  height: 2rem;
+  width: 10rem;
+}
+
 .site-title {
   display: -webkit-box;
   display: -ms-flexbox;

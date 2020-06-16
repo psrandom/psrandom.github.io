@@ -5,6 +5,7 @@ const debug = require('gulp-debug');
 const merge2 = require('merge2');
 const fs = require('fs');
 const YAML = require('yaml')
+const robotstxt = require('generate-robotstxt')
 var pkg = require('./package.json')
 const exec = require('child_process').exec;
 const log = require("fancy-log");
@@ -324,13 +325,33 @@ gulp.task('build:humans.txt', function(){
 });
 
 gulp.task('build:robots.txt', function(){
-  return $.file('robots.txt','',{src:true}) 
-  .pipe($.robots({
-    useragent: '*',
-    Disallow: '',
-    Sitemap: _config.url + '/sitemap.xml'
-    }))
-  .pipe(gulp.dest('./'))
+  return robotstxt({
+    policy: [
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: "/search",
+        crawlDelay: 2,
+      },
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: "/search",
+        crawlDelay: 10,
+      },
+    ],
+    sitemap: _config.url + "/sitemap.xml",
+    host: _config.url,
+  })
+    .then((content) => {
+      return $.file('robots.txt',content.toString(),{src:true})
+          .pipe(gulp.dest('./')) ;
+    })
+    .catch((error) => {
+      throw error;
+    });
+
+      
 });
 
 gulp.task('build:js', function(){
@@ -349,8 +370,16 @@ gulp.task('build:js', function(){
   .pipe(gulp.dest(assets_prefix+'js'));
 });
 
+gulp.task('build:seo', gulp.parallel('build:robots.txt', 'build:humans.txt'));
+
+gulp.task('build', gulp.parallel('build:img', 'build:js', 'build:seo'));
+
 gulp.task('watch:img', function(){
   return gulp.watch(assets_prefix+'img/**/*', gulp.series('build:img'));
+});
+
+gulp.task('watch:js', function(){
+  return gulp.watch(assets_prefix+'img/**/*', gulp.series('build:js'));
 });
 
 gulp.task('aws:sync', function(cb){
@@ -361,5 +390,5 @@ gulp.task('aws:sync', function(cb){
   });
 });
 
-gulp.task('default',gulp.series(['watch:img', 'aws:sync']));
+gulp.task('default',gulp.series(['watch:img', 'watch:js', 'aws:sync']));
 

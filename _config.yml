@@ -59,20 +59,7 @@ darkmode                 : true
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "pirpedro-blog"
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    shortname            : "pseudo-random"
 reCaptcha:
   siteKey                :
   secret                 :
@@ -83,7 +70,7 @@ search_full_content      : # true, false (default)
 search_provider          : "algolia" # lunr (default), algolia, google
 algolia:
   application_id         : "UMHS5VUWA5"
-  index_name             : "PIRPEDRO_BLOG"
+  index_name             : "PSEUDO_RANDOM"
   search_only_api_key    : "9c8f7e5a2856d98edf0df701f6578322"
   powered_by             : false
 google:
