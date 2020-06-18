@@ -1,53 +1,54 @@
 # Authors
 
+author:
+  name             : "Pedro Rodrigues"
+  avatar           : "https://s3.wasabisys.com/psrandom/img/a/pedro-rodrigues-gray-bio.jpg"
+  image            : "https://s3.wasabisys.com/psrandom/img/a/pedro-rodrigues-bio-200w.jpg"
+  bio              : >-   
+      DevOps, Full Stack Developer, Data Engineer and writer in spare time.
+  location         : "Rio de Janeiro, RJ"
+  email            : "pir.pedro@gmail.com"
+  site             : &author_site "http://pirpedro.com.br"
+  signature        : >-
+              See you next time :sunglasses:
+  uri:  *author_site
+  links: 
+    home: *author_site
+    twitter: &twitter "pir_pedro"
+    github: &github "pirpedro"
+    facebook: &facebook "pirpedro"
+    instagram: &instagram "pirpedro"
+    linkedin: &linkedin "pirpedro"
 Andressa Contarato:
   name      : "Andressa Contarato"
   avatar    : "https://s3.wasabisys.com/psrandom/img/a/andressa-contarato-gray-bio.jpg"
+  image     : "https://s3.wasabisys.com/psrandom/img/a/andressa-contarato-bio-200w.jpg"
   bio       : >-   
-              Mozi mozão.
+      Statistics, graduate student in finance and data science 🤷🏻‍♀️. Write about good analysis and places👩🏻‍💻.
   location  : "Rio de Janeiro, RJ"
-  email     : &email "pir.pedro@gmail.com"
+  email     : "andressacontarato@gmail.com"
+  uri       : "http://analiticadatascience.com.br"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url:  "http://pirpedro.com.br"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url:  "https://facebook.com/andressa.contarato"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url:  "https://github.com/contaratoandressa"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/andressacontarato"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/andressacontarato"
+    home: "http://analiticadatascience.com.br"
+    facebook: andressa.contarato
+    github: contaratoandressa
+    instagram: andressacontarato
+    linkedin: andressacontarato
 Chef Pedro: 
-  name             : &name "Chef Pedro"
+  name             : "Chef Pedro"
   avatar           : "https://s3.wasabisys.com/psrandom/img/a/chef-pedro-bio.jpg"
-  bio              : &description >-   
+  image            : "https://s3.wasabisys.com/psrandom/img/a/chef-pedro-bio-200w.jpg"
+  bio              : >-   
     Cozinheiro de final de semana, masterchef do povo a busca de sua estrela michelin.
   location         : "Rio de Janeiro, RJ"
   email            : &email "pir.pedro@gmail.com"
   signature        : >-
               Bom apetite 😋
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: &site "http://pirpedro.com.br"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: !Join [&twitter_url "https://twitter.com/", &twitter "pir_pedro"]
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: !Join [&facebook_url "https://facebook.com/", &facebook "pirpedro"]
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: !Join [&github_url "https://github.com/", &github "pirpedro"]
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: !Join [&instagram_url "https://instagram.com/", &instagram "pirpedro"]
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: !Join [&linkedin_url "https://www.linkedin.com/in/", &linkedin "pirpedro"]
+    home: https://www.pirpedro.com.br
+    twitter: *twitter 
+    github: *github 
+    facebook: *facebook 
+    instagram: *instagram 
+    linkedin: *linkedin
+  listHidden: true

@@ -1,0 +1,34 @@
+{% assign _class = include.class | default="social-link" %}
+{% assign _type = include.type %}
+{% assign _value = include.value %}
+{% assign _with_label = include.withLabel | default: false %}
+
+{% case _type %}
+{% when location %}
+    <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ _value }}</span>
+{% when "home" %}     
+  <a class="{{_class}}" href="{{ _value }}" itemprop="url">
+    <i class="fas fa-fw fa-home" aria-hidden="true"></i>{% if _with_label %}<span class="label">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span>{% endif %}
+  </a>
+{% when "email" %}  
+  <a class="{{_class}}" href="mailto:{{ _value }}">
+    <meta itemprop="email" content="{{ _value }}" />
+    <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i>{% if _with_label %}<span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>{% endif %}
+  </a>
+{% when "youtube" %} 
+{% if _value contains "://" %}
+    <a class="{{_class}}" href="{{ _value }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fab fa-fw fa-youtube" aria-hidden="true"></i>{% if _with_label %}<span class="label">YouTube</span>{% endif %}
+    </a>
+{% elsif author.youtube %}
+    <a class="{{_class}}" href="https://www.youtube.com/user/{{ _value }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fab fa-fw fa-youtube" aria-hidden="true"></i>{% if _with_label %}<span class="label">YouTube</span>{% endif %}
+    </a>
+{% endif %}
+{% else %} 
+  {% assign _url = site.data.links[_type].url | replace: "<username>", _value %}
+  {% assign _icon = site.data.links[_type].icon | default: _type %}
+  <a class="{{_class}}" href="{{_url}}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <i class="fab fa-fw fa-{{_icon}}" aria-hidden="true"></i>{% if _with_label %}<span class="label">{{_type}}</span>{% endif %}
+  </a>
+{% endcase %}      

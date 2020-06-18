@@ -1,0 +1,47 @@
+home:
+  url: <username>
+  icon: link
+keybase:
+  icon: key
+  url: https://keybase.io/<username>
+twitter: 
+  url: https://twitter.com/<username>
+facebook: 
+  url: https://www.facebook.com/<username>
+  icon: facebook-square
+linkedin: 
+  url: https://www.linkedin.com/in/<username>
+xing: 
+  url: https://www.xing.com/profile/<username>
+instagram: 
+  url: https://instagram.com/<username>
+tumblr: 
+  url: https://<username>.tumblr.com
+bitbucket: 
+  url: https://bitbucket.org/<username>
+github: 
+  url: https://github.com/<username>
+gitlab:
+  url: https://gitlab.com/<username>
+stackoverflow: 
+  url: https://stackoverflow.com/users/<username>
+lastfm: 
+  url: https://last.fm/user/<username>
+dribble: 
+  url: https://dribbble.com/<username>
+pinterest: 
+  url: https://www.pinterest.com/<username>
+foursquare: 
+  url: https://foursquare.com/<username>
+steam: 
+  url: https://steamcommunity.com/id/<username>
+soundcloud: 
+  url: https://soundcloud.com/<username>
+weibo: 
+  url: https://www.weibo.com/<username>
+flickr: 
+  url: https://www.flickr.com/<username>
+codepen: 
+  url: https://codepen.io/<username>
+vine: 
+  url: https://vine.co/u/<username>

@@ -5,34 +5,20 @@ author:
   name             : &name "Pedro Rodrigues"
   avatar           : "https://s3.wasabisys.com/psrandom/img/a/pedro-rodrigues-gray-bio.jpg"
   bio              : &description >-   
-    A way to organize ideas, thoughts, solutions and mostly nonsense 
-    that I think about over time.
+    DevOps, Full Stack Developer, Data Engineer and writer in spare time.
   location         : "Rio de Janeiro, RJ"
   email            : &email "pir.pedro@gmail.com"
   site             : &author_site "http://pirpedro.com.br"
   signature        : >-
               See you next time :sunglasses:
-  twitter: &twitter "pir_pedro"
-  github: &github "pirpedro"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: *author_site
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: !Join [&twitter_url "https://twitter.com/", *twitter]
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: !Join [&facebook_url "https://facebook.com/", &facebook "pirpedro"]
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: !Join [&github_url "https://github.com/", *github]
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: !Join [&instagram_url "https://instagram.com/", &instagram "pirpedro"]
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: !Join [&linkedin_url "https://www.linkedin.com/in/", &linkedin "pirpedro"]
+    home:  *author_site
+    twitter: &twitter "pir_pedro"
+    github: &github "pirpedro"
+    facebook: &facebook "pirpedro"
+    instagram: &instagram "pirpedro"
+    linkedin: &linkedin "pirpedro"
+
   # tips service
   tip: 
     user: pirpedro
@@ -96,10 +82,10 @@ social:
   type                   : Person # Person or Organization (defaults to Person)
   name                   : *name # If the user or organization name differs from the site's name
   links: 
-    - !Join [*twitter_url, *twitter]
-    - !Join [*facebook_url, *facebook]
-    - !Join [*instagram_url, *instagram]
-    - !Join [*linkedin_url, *linkedin]
+    - !Join [&twitter_url "https://twitter.com/", *twitter]
+    - !Join [&facebook_url "https://www.facebook.com/", *facebook]
+    - !Join [&instagram_url https://instagram.com/, *instagram]
+    - !Join [&linkedin_url "https://www.linkedin.com/in/", *linkedin]
 
 # Analytics
 analytics:
@@ -111,18 +97,10 @@ analytics:
     # Site Footer
 footer:
   links:
-    - label: ""
-      icon: "fab fa-fw fa-twitter-square"
-      url: !Join [*twitter_url, *twitter ]
-    - label: ""
-      icon: "fab fa-fw fa-facebook-square"
-      url: !Join [*facebook_url, *facebook]
-    - label: ""
-      icon: "fab fa-fw fa-github"
-      url: !Join [*github_url, *github]
-    - label: ""
-      icon: "fab fa-fw fa-instagram"
-      url: !Join [*instagram_url, *instagram]
+    twitter: *twitter
+    facebook: *facebook
+    github: *github
+    instagram: *instagram
 
 
 # Reading Files

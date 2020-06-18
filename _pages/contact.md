@@ -1,7 +1,7 @@
 ---
 title: Contact
 permalink: /contact
-classes: contact wide
+classes: layout--contact wide
 sidebar:
   position: right
 head_stylesheets: "https://fonts.googleapis.com/css?family=Antic+Slab|Fira+Sans"

@@ -13,51 +13,100 @@
 
 }
 
-.heading {
 
-  position: relative;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-left: -1.5rem;
-    max-width: 40rem;
+.layout--splash,
+.layout--home,
+.layout--archive,
+.layout--contact {
+
+  .subtitle{
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: calc(1.5rem + 2px);
     align-self: flex-start;
     width: 100%;
     color: #fff;
     color: var(--background-color);
+    border-bottom: 3px solid #111;
+    border-bottom: 3px solid var(--text-color);
     font-family: "DM Serif Display",Georgia,serif;
     font-family: var(--serif-font);
+    font-size: 1.125em;
+    font-size: var(--text-lg);
     font-weight: 400;
-    font-size: 1.875em;
     font-variant-ligatures: common-ligatures;
     font-feature-settings: "kern" on,"liga" on,"clig" on,"calt" on,"liga","clig";
-    line-height: 1.25;
     z-index: 99;
-    transform: rotate(-1deg);
-
-  @include breakpoint($medium) {
-    font-size: 2.25em;
-  }  
-
-  @include breakpoint($small) {
-    grid-column-start: 2;
-    padding-right: 5%;
-    font-size: 2.25em;
-  } 
+    padding-bottom: 0;
   
-  span{
-    padding: 0 .5rem 0 1.5rem;
-    line-height: 1.5;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    background-color: #111;
-    background-color: var(--text-color);
-    -webkit-mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
-    mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+    @include breakpoint($medium) {
+      font-size: 1.25em;
+    }
+    
+    @include breakpoint($small) {
+      grid-column-start: 2;
+      padding-right: 5%;
+      font-size: 1.25em;
+    }  
+  
+    span {
+      display: inline-block;
+      padding: .25rem .5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      background-color: #111;
+      background-color: var(--text-color);
+      -webkit-mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+      mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+    }
   }
 
-  a {
-    color: #fff;
-    color: var(--background-color);
+  #page-title {
+
+    position: relative;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: -1.5rem;
+      max-width: 40rem;
+      align-self: flex-start;
+      width: 100%;
+      color: #fff;
+      color: var(--background-color);
+      font-family: "DM Serif Display",Georgia,serif;
+      font-family: var(--serif-font);
+      font-weight: 400;
+      font-size: 1.875em;
+      font-variant-ligatures: common-ligatures;
+      font-feature-settings: "kern" on,"liga" on,"clig" on,"calt" on,"liga","clig";
+      line-height: 1.25;
+      z-index: 99;
+      transform: rotate(-1deg);
+
+    @include breakpoint($medium) {
+      font-size: 2.25em;
+    }  
+
+    @include breakpoint($small) {
+      grid-column-start: 2;
+      padding-right: 5%;
+      font-size: 2.25em;
+    } 
+    
+    span{
+      padding: 0 1.5rem 0 1.5rem;
+      line-height: 1.5;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      background-color: #111;
+      background-color: var(--text-color);
+      -webkit-mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+      mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
+    }
+
+    a {
+      color: #fff;
+      color: var(--background-color);
+    }
   }
 }
 
@@ -89,43 +138,3 @@
   margin-right: auto;
 }
 
-.home__subtitle{
-  position: relative;
-  margin-top: 3rem;
-  margin-bottom: calc(1.5rem + 2px);
-  align-self: flex-start;
-  width: 100%;
-  color: #fff;
-  color: var(--background-color);
-  border-bottom: 3px solid #111;
-  border-bottom: 3px solid var(--text-color);
-  font-family: "DM Serif Display",Georgia,serif;
-  font-family: var(--serif-font);
-  font-size: 1.125em;
-  font-size: var(--text-lg);
-  font-weight: 400;
-  font-variant-ligatures: common-ligatures;
-  font-feature-settings: "kern" on,"liga" on,"clig" on,"calt" on,"liga","clig";
-  z-index: 99;
-
-  @include breakpoint($medium) {
-    font-size: 1.25em;
-  }
-  
-  @include breakpoint($small) {
-    grid-column-start: 2;
-    padding-right: 5%;
-    font-size: 1.25em;
-  }  
-
-  span {
-    display: inline-block;
-    padding: .25rem .5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    background-color: #111;
-    background-color: var(--text-color);
-    -webkit-mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
-    mask-image: url(https://s3.wasabisys.com/psrandom/img/page/dust.png);
-  }
-}

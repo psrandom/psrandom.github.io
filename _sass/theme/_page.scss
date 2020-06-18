@@ -111,6 +111,17 @@ body {
   font-size: $type-size-4;
 }
 
+#header-gh-btns {
+  margin-bottom: 0.9375rem;
+
+  > iframe {
+    @include breakpoint($small){
+      display: block;
+      margin-bottom: 0.3125rem;
+    }
+  }
+}
+
 .page__content {
   text-align: justify;
   

@@ -1,0 +1,12 @@
+<div class="list-circles-item">
+  <a href="{{item.uri}}"><img src="{{ item.image }}" class="item-img"></a>
+  <h4 class="item-name">{{item.name}}</h4>
+  <div class="item-desc">{{item.bio}}</div>
+  <div class="item-links">
+    {% for l in item.links %}
+       {% assign ltype = l[0] %}
+        {% assign lvalue = l[1] %}
+      {% include link class="item-link" type=ltype value=lvalue%}
+    {% endfor %}
+  </div>
+</div>

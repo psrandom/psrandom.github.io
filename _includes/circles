@@ -1,0 +1,14 @@
+{% if include.id %}
+  {% assign itens = page[include.id] | default: site.data.lists[include.id] %}
+{% else %}
+  {% assign itens = page.circles | default: site.data.authors %}
+ {% endif %}
+<div class="list-circles">
+{% for i in itens %}
+   {% comment %}Doing that cause data.authors return for each item : item[0]: name and item[1]: properties{% endcomment %}
+   {% assign item = i[1] | default: i %}
+   {% unless item.listHidden%}
+   {% include circle_item %}
+   {% endunless %}
+{%- endfor -%}
+</div>

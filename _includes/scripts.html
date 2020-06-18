@@ -1,8 +1,4 @@
-{% if page.footer_scripts %}
-  {% for script in page.footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
@@ -10,6 +6,20 @@
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
   <script src="https://kit.fontawesome.com/d557f3c7f0.js" crossorigin="anonymous"></script>
+{% endif %}
+
+{% if page.footer_scripts %}
+  {% for script in page.footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
+{% if page.script_snippet %}
+  {% for script in page.script_snippet %}
+    <script>
+      {{script}}
+    </script>
+  {% endfor %}
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}

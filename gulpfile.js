@@ -73,6 +73,15 @@ gulp.task('build:img:avatar', function() {
       $.responsive({
         '**/*': [
           {
+            width:200,
+            height:200,
+            grayscale: true,
+            rename: {
+              suffix: '-gray-bio-200w',
+              extname: '.jpg'
+            }
+          },
+          {
             width:110,
             height:110,
             grayscale: true,
@@ -90,6 +99,16 @@ gulp.task('build:img:avatar', function() {
               extname: '.jpg'
             }
           },
+
+          {
+            width:200,
+            height:200,
+            rename: {
+              suffix: '-bio-200w',
+              extname: '.jpg'
+            }
+          },
+
           {
             width:110,
             height:110,
