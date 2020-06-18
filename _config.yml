@@ -84,7 +84,7 @@ social:
   links: 
     - !Join [&twitter_url "https://twitter.com/", *twitter]
     - !Join [&facebook_url "https://www.facebook.com/", *facebook]
-    - !Join [&instagram_url https://instagram.com/, *instagram]
+    - !Join [&instagram_url "https://instagram.com/", *instagram]
     - !Join [&linkedin_url "https://www.linkedin.com/in/", *linkedin]
 
 # Analytics
