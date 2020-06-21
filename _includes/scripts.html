@@ -7,6 +7,14 @@
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
   <script src="https://kit.fontawesome.com/d557f3c7f0.js" crossorigin="anonymous"></script>
 {% endif %}
+{% if page.particles %}
+  <script src="/assets/js/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', '/assets/js/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+{% endif %}
 
 {% if page.footer_scripts %}
   {% for script in page.footer_scripts %}

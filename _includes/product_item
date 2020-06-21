@@ -1,0 +1,9 @@
+
+<div class="product">
+  <div class="product__info">
+    <img class="product__image" src="{{item.image}}" alt="{{item.title}}" />
+    <h3 class="product__title">{{item.title}}</h3>
+    <span class="product__author highlight">{{item.description}}</span>
+    <button class="action action--button" onclick="window.open('{{item.action.url}}')"><i class="fa fa-{{item.action.icon | default: "comments" }}"></i><span class="action__text">{{item.action.label}}</span></button>
+</div>
+</div>

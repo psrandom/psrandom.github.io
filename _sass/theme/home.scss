@@ -1,5 +1,8 @@
 .title {
-
+  width: calc(100% - 2rem);
+  max-width: 40rem;
+  margin-left:auto;
+  margin-right: auto;
   @include breakpoint($medium) {
     display: grid;
     grid-template-columns: auto 37rem 20rem auto;
