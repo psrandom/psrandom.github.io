@@ -2,6 +2,7 @@
 layout:	post
 title:	"Um breve estudo sobre o covid-19"
 date:	2020-04-18
+author: "Andressa Contarato"
 ---
 
   Olá! Hoje meu post será focado no que temos vivido desde o começo do ano: a pandemia chamada coronavírus, ou melhor covid-19.

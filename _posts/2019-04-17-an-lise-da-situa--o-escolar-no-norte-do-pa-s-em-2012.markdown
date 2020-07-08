@@ -2,6 +2,7 @@
 layout:	post
 title:	"Análise da Situação escolar no Norte do País em 2012"
 date:	2019-04-17
+author: "Andressa Contarato"
 ---
 
   Uso do Power BI na análise do cenário da educação no norte do país.

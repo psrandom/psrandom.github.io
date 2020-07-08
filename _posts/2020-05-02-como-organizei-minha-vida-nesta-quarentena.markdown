@@ -2,6 +2,7 @@
 layout:	post
 title:	"Como organizei minha vida nesta quarentena"
 date:	2020-05-02
+author: "Andressa Contarato"
 ---
 
   Olá! Hoje vou deixar um pouco de lado o tópico de ciências de dados para poder falar um pouco mais sobre como estou me organizando nesta quarentena.

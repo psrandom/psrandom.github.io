@@ -2,6 +2,7 @@
 layout:	post
 title:	"Infogram"
 date:	2020-03-13
+author: "Andressa Contarato"
 ---
 
   ### Hoje vou falar um pouco sobre o INFOGRAM.
