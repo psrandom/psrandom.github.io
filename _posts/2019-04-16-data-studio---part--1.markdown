@@ -6,10 +6,10 @@ header:
   overlay_image: https://s3.wasabisys.com/psrandom/img/p/medium/1*voVAhq1w8k7k6_WGNU1obg.jpg
   overlay_filter: 0.8
   actions:
-    - label: "Jekyll"
-      url: "https://jekyllrb.com/"
-    - label: "Github"
-      url: "https://github.com"
+    - label: "Google Data Studio"
+      url: "https://datastudio.google.com/"
+    - label: "Power BI"
+      url: "https://powerbi.microsoft.com/pt-br/"
   teaser: https://s3.wasabisys.com/psrandom/img/p/medium/1*voVAhq1w8k7k6_WGNU1obg.jpg
 tags: "devops" 
 classes: wide
