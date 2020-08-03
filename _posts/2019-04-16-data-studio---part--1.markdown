@@ -2,11 +2,20 @@
 title:	"Data Studio — Part. 1"
 date:	2019-04-16
 author: "Andressa Contarato"
+header:
+  overlay_image: https://s3.wasabisys.com/psrandom/img/p/medium/1*voVAhq1w8k7k6_WGNU1obg.jpg
+  overlay_filter: 0.8
+  actions:
+    - label: "Jekyll"
+      url: "https://jekyllrb.com/"
+    - label: "Github"
+      url: "https://github.com"
+  teaser: https://s3.wasabisys.com/psrandom/img/p/medium/1*voVAhq1w8k7k6_WGNU1obg.jpg
+tags: "devops" 
+classes: wide
 ---
 
 O Google Data Studio é uma das diversas ferramentas de construção de dashboards ...
-
-![Foca](https://s3.wasabisys.com/psrandom/img/p/medium/1*voVAhq1w8k7k6_WGNU1obg.jpg)
 
 Antes de explicar as funcionalidades do Google Data Studio, é interessante entender o conceito de dashboard. Uma tendência de mercado é o chamado Dashboard, que vem a ser um painel de análise de dados com intuito de ser mais visual e com poucos dados de texto. É uma forma direta e objetiva de centralização de dados e para monitoramento para tomadas de deciões numa empresa. Esses tipos de visualizações geralmente são construídas por equipes de dados, principalmente de Business Intelligence (sigla BI). 
 
