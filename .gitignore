@@ -4,6 +4,7 @@ _site
 /vendor
 .env
 node_modules
+.bundle
 private
 public
 _plugins

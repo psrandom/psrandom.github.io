@@ -1,15 +1,12 @@
 'use strict';
 const gulp = require('gulp');
 const del = require('del');
-const debug = require('gulp-debug');
-const merge2 = require('merge2');
 const fs = require('fs');
 const YAML = require('yaml')
 const robotstxt = require('generate-robotstxt')
-var pkg = require('./package.json')
 const exec = require('child_process').exec;
 const log = require("fancy-log");
-const path = require('path')
+const path = require('path');
 const $ = require('gulp-load-plugins')({
   rename: {
     'gulp-hub': 'HubRegistry',
@@ -59,7 +56,7 @@ gulp.task('build:img:private', function(){
         ]
       })
     ], {verbose: true }))
-    .pipe(gulp.dest(src_prefix)) 
+    .pipe(gulp.dest(src_prefix))
 });
 
 gulp.task('build:img:avatar', function() {
@@ -170,7 +167,7 @@ gulp.task('build:img:logo', function() {
         errorOnEnlargement: false
       })
     )
-    .pipe(gulp.dest(dest_prefix+'l'));  
+    .pipe(gulp.dest(dest_prefix+'l'));
 });
 
 gulp.task('build:favicon', gulp.series('build:img:logo', function () {
@@ -216,7 +213,7 @@ gulp.task('build:img:default', function() {
       rename: { suffix: '-featured' }
     },{
 			width: 200,
-			rename: { suffix: '-teaser' }  
+			rename: { suffix: '-teaser' }
 		},{
       width: 640
     }],
@@ -247,7 +244,7 @@ gulp.task('build:img:site', gulp.parallel('build:img:default', function() {
       ]
     })
   ], {verbose: true }))
-  .pipe(gulp.dest(dest_prefix+'page')) 
+  .pipe(gulp.dest(dest_prefix+'page'))
 }));
 
 gulp.task('build:img:header', function() {
@@ -267,7 +264,7 @@ gulp.task('build:img:header', function() {
       rename: { suffix: '-featured' }
     },{
 			width: 200,
-			rename: { suffix: '-teaser' }  
+			rename: { suffix: '-teaser' }
 		},{
       width: 640
     }]
@@ -297,7 +294,7 @@ gulp.task('build:img:posts', gulp.parallel('build:img:header',function() {
 			width: 916,
     },{
 			width: 1030,
-			rename: { suffix: '-large' }  
+			rename: { suffix: '-large' }
 		}],
 	}, {
     format: 'jpg',
@@ -315,7 +312,7 @@ gulp.task('build:img:posts', gulp.parallel('build:img:header',function() {
 gulp.task('build:img', gulp.series('build:img:private',gulp.parallel('build:img:avatar', 'build:img:logo', 'build:img:site', 'build:img:posts')));
 
 gulp.task('build:humans.txt', function(){
-  return $.file('humans.txt','',{src:true}) 
+  return $.file('humans.txt','',{src:true})
   .pipe($.humans({
     header: _config.title,
     team: [{
@@ -370,7 +367,7 @@ gulp.task('build:robots.txt', function(){
       throw error;
     });
 
-      
+
 });
 
 gulp.task('build:js', function(){
@@ -384,7 +381,7 @@ gulp.task('build:js', function(){
   .pipe($.comment(`
     Theme <%=pkg.version %> by <%= pkg.author %>
     Copyright 2019-<%= moment().format('YYYY') %> <%= pkg.author %> - <%= pkg.homepage %> | @pirpedro
-    Licensed under <%= pkg.license %> 
+    Licensed under <%= pkg.license %>
   `))
   .pipe(gulp.dest(assets_prefix+'js'));
 });

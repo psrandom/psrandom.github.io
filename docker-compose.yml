@@ -2,15 +2,16 @@ version: '3'
 
 services:
   web:
-    build: 
+    build:
       context: .
       args:
         - ALGOLIA_API_KEY=${ALGOLIA_API_KEY}
-    image: blog:1.0
+    image: psrandom:1.0
+    entrypoint: .docker/entrypoint.sh
     command: bundle exec jekyll serve -H 0.0.0.0 -t --force_polling --livereload --drafts
     volumes:
       - .:/srv/jekyll
-      - ~/.aws:/home/jekyll/.aws
+      # - ~/.aws:/home/jekyll/.aws
       #- ./vendor/bundle:/usr/local/bundle
       #- ./vendor/theme:/tmp
     ports:
