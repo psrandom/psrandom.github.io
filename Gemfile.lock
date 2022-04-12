@@ -252,18 +252,28 @@ GEM
     multipart-post (2.1.1)
     nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
+<<<<<<< HEAD
       racc (~> 1.4)
     nokogiri (1.13.4-x86_64-linux)
+=======
+>>>>>>> fec11b84785e7ed4538921f8703eae018ee04aaa
       racc (~> 1.4)
     octokit (4.22.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+<<<<<<< HEAD
     progressbar (1.11.0)
     public_suffix (4.0.7)
     racc (1.6.0)
     rb-fsevent (0.11.1)
+=======
+    progressbar (1.10.1)
+    public_suffix (3.1.1)
+    racc (1.6.0)
+    rb-fsevent (0.11.0)
+>>>>>>> fec11b84785e7ed4538921f8703eae018ee04aaa
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
